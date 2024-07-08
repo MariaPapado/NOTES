@@ -1,0 +1,5 @@
+CREATE VENV
+python -m venv ./env2/
+source activate /.../env2/bin/activate
+deactivate
+rm -r venv ./env2
