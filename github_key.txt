@@ -1,0 +1,7 @@
+#to add ssh key to github
+
+ssh-keygen (but first check if there is an existing one you might want to use ---> ls .ssh
+
+cat id_ed25519.pub
+
+and paste it to github
