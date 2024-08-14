@@ -2,6 +2,7 @@
 
 pip install --extra-index-url https://pypi.orbitaleye.nl/simple pimsys-pythontools
 pip install --extra-index-url https://pypi.orbitaleye.nl/simple pimsys-regions
+pip install --extra-index-url https://pypi.orbitaleye.nl/simple orbital_vault
 
 For regions package you might need to do:
 sudo apt-get install libpq-dev
