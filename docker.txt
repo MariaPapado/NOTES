@@ -21,3 +21,10 @@ docker logs highrescloudrgb   (auto gia na dw ti lathos uparxei... to highresclo
 
 docker logs
 docker-build up
+
+an u url tou docker mou einai px test_url = 'http://10.10.100.8:8062/api/process'
+tote gia na kanw health check vazw sto browser http://10.10.100.8:8062/healthcheck
+
+POETRY
+poetry shell gia na kanw activate to environment
+poetry init otan kanw kainourio environment??
