@@ -7,6 +7,8 @@ pip uninstall --extra-index-url https://pypi.orbitaleye.nl/simple prefect_utils=
 
 pip install --extra-index-url https://pypi.orbitaleye.nl/simple cosmic_eye_client
 
+pip install --extra-index-url https://pypi.orbitaleye.nl/simple customer_database  ###from CustomerDatabase import CustomerDatabase
+
 
 pip install prefect==2.17.1
 
