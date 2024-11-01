@@ -26,6 +26,8 @@ an u url tou docker mou einai px test_url = 'http://10.10.100.8:8062/api/process
 tote gia na kanw health check vazw sto browser http://10.10.100.8:8062/healthcheck
 
 POETRY
+poetry shell gia na kanw activate to environment
+
 poetry init otan kanw kainourio environment??...otan thelw na dhmiourghsw to pyproject.toml  !!!!!
 poetry lock   otan allaksw kati sto pyproject.toml. kai se poia allh periptwsh?
 
@@ -34,5 +36,7 @@ mhn to ftiaxneis manually to pyproject.toml!!!!
 
 poetry install .....This will install the dependencies listed in pyproject.toml and generate a poetry.lock file with the exact versions of each installed dependency.
 
-poetry shell gia na kanw activate to environment
+docker build -t docker-registry.orbitaleye.nl:5000/class-location:latest .
+docker push docker-registry.orbitaleye.nl:5000/class-location
+
 
