@@ -36,7 +36,7 @@ mhn to ftiaxneis manually to pyproject.toml!!!!
 
 poetry install .....This will install the dependencies listed in pyproject.toml and generate a poetry.lock file with the exact versions of each installed dependency.
 
-docker build -t docker-registry.orbitaleye.nl:5000/class-location:latest .
-docker push docker-registry.orbitaleye.nl:5000/class-location
+docker build -t docker-registry.orbitaleye.nl:5000/class-location:latest ... alliws apla docker compose build
+docker push docker-registry.orbitaleye.nl:5000/class-location  .............alliws apla docker compose push
 
 
