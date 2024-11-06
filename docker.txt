@@ -25,7 +25,7 @@ docker-build up
 an u url tou docker mou einai px test_url = 'http://10.10.100.8:8062/api/process'
 tote gia na kanw health check vazw sto browser http://10.10.100.8:8062/healthcheck
 
-POETRY
+POETRY (ta parakatw vhmata ta ekana gia na ftiaksw to prefect tou class location)
 poetry shell gia na kanw activate to environment
 
 poetry init otan kanw kainourio environment??...otan thelw na dhmiourghsw to pyproject.toml  !!!!!
@@ -38,5 +38,13 @@ poetry install .....This will install the dependencies listed in pyproject.toml 
 
 docker build -t docker-registry.orbitaleye.nl:5000/class-location:latest ... alliws apla docker compose build
 docker push docker-registry.orbitaleye.nl:5000/class-location  .............alliws apla docker compose push
+
+--teliko vhma: poetry run python deploy.py
+m edwse arxika auto to error: ValueError: Could not find work pool 'ml-hrcd-docker-pool'. Please create it before deploying this flow.
+kai meta eprepe na kanoume: prefect config set PREFECT_API_URL="https://prefect.orbitaleye.nl/api"
+afou eidame prwta me 'poetry run prefect config view' oti den eixame pei poion server theloume (;)
+meta pali poetry run python deploy.py kai anoigw to url pou mou vgazei, pataw run ktl...
+
+
 
 
