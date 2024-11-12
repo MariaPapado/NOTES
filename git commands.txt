@@ -1,3 +1,8 @@
 git add .
 git commint -m '1st commit'
 git push
+
+
+##otan ekana add kai commit, kai meta ekana delete kapoio large file px montelo, meta sunexize na to vlepei otan ksanaekana push. se auth thn periptwsh ekana:
+   git reset --soft HEAD~2
+   git restore --staged .
