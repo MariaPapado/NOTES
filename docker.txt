@@ -48,3 +48,11 @@ meta pali poetry run python deploy.py kai anoigw to url pou mou vgazei, pataw ru
 
 
 
+FastAPI
+-- gia na kanw build : 
+   docker build -t new-hrcd-cloud .   (new-hrcd-cloud einai to onoma pou edwsa monh mou sto docker)
+    kai meta:
+    docker run new-hrcd-cloud
+                     
+
+
