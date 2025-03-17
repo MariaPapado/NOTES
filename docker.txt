@@ -5,7 +5,7 @@ docker ps  (vlepw poia docker xrhsimopoiountai ston upologisth me poia ports. di
             sto docker-compose.yml
             ..kai allaksa kai to port sto app.py)
 
-docker-compose up --build -d    (to --build to vazw gia na kanei build dld meta an egkatasthsw ena kainourio
+docker compose up --build -d    (to --build to vazw gia na kanei build dld meta an egkatasthsw ena kainourio
                                  library prepei na ksanakanw build.
                          to -d to vazw an thelw sto telos na kleisei to command kai na mporw 
                          na sunexizw na xrhsimopoiw to terminal. an thelw na vlepw live meta to feedback den vaze -d
