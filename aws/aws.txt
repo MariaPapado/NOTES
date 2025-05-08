@@ -1,0 +1,36 @@
+gia na kanw build to docker arxika siga siga to pyproject.toml
+sto opoio exw prosthesei manually ta torch kai torchvision me cpu version, kai epishs manually prostheteis kai ta :
+
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority="supplemental"
+
+[[tool.poetry.source]]
+name = "aws"
+url = "https://oe-pypi-domain-381492141243.d.codeartifact.eu-central-1.amazonaws.com/pypi/oe-pypi/simple/"
+priority = "supplemental"
+
+meta gia na kanw:
+    poetry add orbital-vault
+    poetry add customer-database
+    poetry add pimsys-regions
+auta xreiazetai prwta na sundethw me to aws kai prepei na treksw prwta auto to command:
+
+poetry config http-basic.aws aws "$(aws codeartifact get-authorization-token --domain oe-pypi-domain --domain-owner 381492141243 --region eu-central-1 --query authorizationToken --output text)"
+
+meta an kanw
+
+docker build -t previews-clouds .
+
+tha vgalei pali kapoio authorization error gia to aws. epeidh twra nai men exw kanei assume kai exw sundethei locally me to aws pypi, 
+alla to docker mou akoma den exei kapoio rolo sto aws. opote to aws den to anagnwrizei. gi auto prepei na kanw build etsi:
+
+docker build -t previews-clouds  --build-arg CODEARTIFACT_TOKEN=$(aws codeartifact get-authorization-token \
+  --domain oe-pypi-domain \
+  --domain-owner 381492141243 \
+  --region eu-central-1 \
+  --query authorizationToken \
+  --output text) .
+
+kai etsi teleiwnw me to build tou docker.
