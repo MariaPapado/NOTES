@@ -1,3 +1,15 @@
+#########################ASSUME#############################################################################################################################
+eixa ena provlhma me to assume.
+ekana assume ok, alla meta otan ekana: 
+ aws sts get-caller-identity
+
+den evriske ta credentials mou. h evriske mono partial credentials.
+gia na to lusoume prosthesame me to Jouke sto telos tou ~/.bashrc auto to line:
+
+alias assume="source /usr/local/bin/assume"
+
+
+#########################BUILD DOCKER################################################################################################################################
 gia na kanw build to docker arxika siga siga to pyproject.toml
 sto opoio exw prosthesei manually ta torch kai torchvision me cpu version, kai epishs manually prostheteis kai ta :
 
